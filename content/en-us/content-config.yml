@@ -1,0 +1,6 @@
+maintainer: 'Kris Gray<kgray@justise.com>'
+name: 'Justise.com'
+
+pages:
+    /:
+        source: 'content/en-us/homepage.md'
