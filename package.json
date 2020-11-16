@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "Website for Justise.com",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "@sfdocs-internal/doc-framework": "^0.0.2-alpha11"
+  },
   "devDependencies": {},
   "scripts": {
-    "test": "test"
+    "start": "sfdocs preview ."
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,96 @@
+<html lang="en" xml:lang="en" xmlns= "http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+    <meta name="author" content="Kris Gray"/>
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+    <title>Justise.com - Kris Gray</title>
+    <!-- MDB -->
+    <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0/mdb.min.js"
+        ></script>
+
+    <!-- Font Awesome -->
+    <link
+        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        rel="stylesheet"
+/>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        rel="stylesheet"
+/>
+
+    <!-- MDB -->
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0/mdb.min.css"
+        rel="stylesheet"
+/>
+    <style>
+      #customize-list {
+        float: left;
+        margin-left: 20px;
+        list-style: none;
+      }
+      #gr_updates_widget {
+        float: left;
+        border-radius: 5px;
+        background-color: #fff;
+        -webkit-box-shadow: 0 0 4px 1px #e0e0e0, inset 0 0 0 1px #e0e0e0;
+        -moz-box-shadow: 0 0 4px 1px #e0e0e0, inset 0 0 0 1px #e0e0e0;
+        box-shadow: 0 0 4px 1px #e0e0e0, inset 0 0 0 1px #e0e0e0;
+        padding: 15px 0 0 15px;
+        width: 400px;
+        height: 465px;
+      }
+      .page-footer {
+        background: rgba(96, 125, 139, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-black"></nav>
+      <!-- Navbar -->
+
+      <!-- Background image -->
+      <div
+        class="p-5 text-center bg-image"
+        style="
+          background-image: url('/assets/images/header-narrow.jpg');
+          height: 600px;
+        "
+      >
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.2);">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <h1 class="mb-3">Kris Gray</h1>
+              <h4 class="mb-3">My little corner of the world</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Background image -->
+    </header>
+    <main>
+      <div class="container">
+        {{ body | safe }}
+      </div>
+      <!-- Footer -->
+      <footer class="page-footer font-small">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">Don't worry. Be happy.</div>
+        <!-- Copyright -->
+
+      </footer>
+      <!-- Footer -->
+    </main>
+  </body>
+  {{ lwr_resources | safe }}
+</html>

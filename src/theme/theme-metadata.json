@@ -1,0 +1,11 @@
+{
+    "layoutsPath": "layouts",
+    "modulesDir": "modules",
+    "assetDirs": [
+        "assets"
+    ],
+    "labelsDir": "",
+
+    "// Which layout to use in the theme when there is none specified?": "",
+    "baseLayout": "base.njk"
+}
