@@ -8,7 +8,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "sfdocs preview ."
+    "start": "sfdocs preview .",
+    "heroku-prebuild": "npm config set '@salesforcedevs:registry=https://registry.npmjs.org' && npm config set '//registry.npmjs.org/:_authToken' '${NPM_TOKEN}'"
   },
   "repository": {
     "type": "git",
