@@ -4,5 +4,7 @@ name: 'Justise.com'
 pages:
     /:
         # I would expect this to allow me to specify
-        layout: 'src/theme/layouts/base.njk'
-        source: 'content/en-us/homepage.md'
+        # layout: 'src/theme/layouts/base.njk'
+        content: 'homepage.md'
+
+projects: []
