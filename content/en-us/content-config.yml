@@ -3,7 +3,7 @@ name: 'Justise.com'
 
 pages:
     /:
-        content: 'homepage.md'
+        content: 'homepage.njk'
 
 # I shouldn't need this
 projects: []

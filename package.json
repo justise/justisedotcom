@@ -4,12 +4,11 @@
   "description": "Website for Justise.com",
   "main": "index.js",
   "dependencies": {
-    "@sfdocs-internal/cli": "^0.1.0-alpha3"
+    "@sfdocs-internal/cli": "0.5.4"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "sfdocs preview .",
-    "heroku-prebuild": "npm config set '@salesforcedevs:registry=https://registry.npmjs.org' && npm config set '//registry.npmjs.org/:_authToken' '${NPM_TOKEN}'"
+    "start": "sfdocs preview ."
   },
   "repository": {
     "type": "git",
@@ -22,10 +21,10 @@
   },
   "homepage": "https://github.com/justise/justisedotcom#readme",
   "volta": {
-    "node": "14.15.0",
+    "node": "14.15.5",
     "yarn": "1.22.10"
   },
   "engines": {
-    "node": ">=14.15.0"
+    "node": ">=14.15.5"
   }
 }
