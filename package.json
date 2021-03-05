@@ -4,11 +4,12 @@
   "description": "Website for Justise.com",
   "main": "index.js",
   "dependencies": {
-    "@sfdocs-internal/cli": "0.5.4"
+    "@sfdocs-internal/cli": "0.5.11"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "sfdocs preview ."
+    "start": "sfdocs preview .",
+    "dev": "sfdocs preview . --live"
   },
   "repository": {
     "type": "git",

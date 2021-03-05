@@ -1,1 +1,5 @@
 theme: src/theme
+
+supportedLocales:
+    - id: en-us
+      label: English
