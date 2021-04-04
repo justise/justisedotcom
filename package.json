@@ -4,7 +4,7 @@
   "description": "Website for Justise.com",
   "main": "index.js",
   "dependencies": {
-    "@sfdocs-internal/cli": "0.5.11"
+    "@sfdocs-internal/cli": "0.5.102"
   },
   "devDependencies": {},
   "scripts": {

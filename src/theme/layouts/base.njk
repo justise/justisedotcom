@@ -1,18 +1,28 @@
+---
+bannerbackground: '/assets/images/header-narrow.webp'
+bannerheight: '600px'
+bannertitle: 'Kris Gray'
+bannersubtitle: 'My little corner of the world'
+---
 <html lang="en" xml:lang="en" xmlns= "http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8"/>
+    <link rel="prefetch" href="{{ bannerbackground }}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
     <meta name="author" content="Kris Gray"/>
     <meta name="google" content="notranslate">
     <meta http-equiv="Content-Language" content="en">
-    <title>Justise.com - Kris Gray</title>
+    <title>Kris Gray - Principal Developer</title>
 
-    <!-- MDB -->
+    <!-- Material Design for Bootstrap -->
     <link
         href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0/mdb.min.css"
         rel="stylesheet"
 />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
       #customize-list {
         float: left;
         margin-left: 20px;
@@ -44,22 +54,22 @@
       <div
         class="p-5 text-center bg-image"
         style="
-          background-image: url('/assets/images/header-narrow.webp');
-          height: 600px;
+          background-image: url('{{ bannerbackground }}');
+          height: {{bannerheight | default(0)}};
         "
       >
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.2);">
           <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white">
-              <h1 class="mb-3">Kris Gray</h1>
-              <h4 class="mb-3">My little corner of the world</h4>
+              <h1 class="mb-3">{{ bannertitle }}</h1>
+              <h4 class="mb-3">{{ bannersubtitle }}</h4>
             </div>
           </div>
         </div>
       </div>
       <!-- Background image -->
     </header>
-    <main>
+    <main class="mt-5">
       <div class="container">
         {{ body | safe }}
       </div>
