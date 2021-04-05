@@ -4,7 +4,8 @@
   "description": "Website for Justise.com",
   "main": "index.js",
   "dependencies": {
-    "@sfdocs-internal/cli": "0.5.102"
+    "@sfdocs-internal/cli": "0.5.102",
+    "execa": "^5.0.0"
   },
   "devDependencies": {},
   "scripts": {
