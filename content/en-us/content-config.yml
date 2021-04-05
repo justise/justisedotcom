@@ -4,5 +4,8 @@ name: 'Justise.com'
 pages:
     /:
         content: 'homepage.njk'
+    /resume:
+        content: 'resume.njk'
+
 # I shouldn't need this
 projects: []

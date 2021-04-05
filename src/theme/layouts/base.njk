@@ -1,65 +1,74 @@
+---
+bannerbackground: '/assets/images/header-narrow.webp'
+bannerheight: '600px'
+bannertitle: 'Kris Gray'
+bannersubtitle: 'My little corner of the world'
+---
 <html lang="en" xml:lang="en" xmlns= "http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8"/>
+    <link rel="prefetch" href="{{ bannerbackground }}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
     <meta name="author" content="Kris Gray"/>
     <meta name="google" content="notranslate">
     <meta http-equiv="Content-Language" content="en">
-    <title>Justise.com - Kris Gray</title>
+    <title>Kris Gray - Principal Developer</title>
 
-    <!-- MDB -->
+    <!-- Material Design for Bootstrap -->
     <link
         href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0/mdb.min.css"
         rel="stylesheet"
 />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <style>
-      #customize-list {
-        float: left;
-        margin-left: 20px;
-        list-style: none;
-      }
-      #gr_updates_widget {
-        float: left;
-        border-radius: 5px;
-        background-color: #fff;
-        -webkit-box-shadow: 0 0 4px 1px #e0e0e0, inset 0 0 0 1px #e0e0e0;
-        -moz-box-shadow: 0 0 4px 1px #e0e0e0, inset 0 0 0 1px #e0e0e0;
-        box-shadow: 0 0 4px 1px #e0e0e0, inset 0 0 0 1px #e0e0e0;
-        padding: 15px 0 0 15px;
-        width: 400px;
-        height: 465px;
-      }
-      .page-footer {
-        background: rgba(96, 125, 139, 0.1);
-      }
+      /** Needs to be here as an import statement since using a link tag was mangling the URL. (LWR issue) */
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
     </style>
+    <link rel="stylesheet" href="/assets/css/main.css"/>
+    <link rel="icon" type="image/ico" href="/assets/images/favicon.ico"/>
   </head>
   <body>
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-black"></nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          {% if CONTENT_TYPE.id == '/' %}
+            <ol class="navbar-nav flex-fill flex-row-reverse">
+              <li class="nav-item">
+                <a href="/resume" class="nav-link active">Résumé</a>
+              </li>
+            </ol>
+          {% else %}
+            <ol class="navbar-nav flex-fill">
+              <li class="nav-item">
+                <a href="/" class="nav-link active">Home</a>
+              </li>
+            </ol>
+          {% endif %}
+        </div>
+      </nav>
       <!-- Navbar -->
 
       <!-- Background image -->
       <div
         class="p-5 text-center bg-image"
         style="
-          background-image: url('/assets/images/header-narrow.webp');
-          height: 600px;
+          background-image: url('{{ bannerbackground }}');
+          height: {{bannerheight | default(0)}};
         "
       >
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.2);">
           <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white">
-              <h1 class="mb-3">Kris Gray</h1>
-              <h4 class="mb-3">My little corner of the world</h4>
+              <h1 class="mb-3">{{ bannertitle }}</h1>
+              <h4 class="mb-3 banner-subtitle">{{ bannersubtitle }}</h4>
             </div>
           </div>
         </div>
       </div>
       <!-- Background image -->
     </header>
-    <main>
+    <main class="mt-5">
       <div class="container">
         {{ body | safe }}
       </div>
