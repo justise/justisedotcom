@@ -1,3 +1,65 @@
+/* Site generic */
+body {
+    color: #555;
+}
 a {
     color: #0d47a1;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 2em;
+}
+
+b {
+    color: #3c3b3b;
+}
+
+/* Hero Banner */
+.banner-subtitle {
+    opacity: 0.75;
+}
+
+/* Generic Footer */
+.page-footer {
+    background: rgba(96, 125, 139, 0.1);
+}
+
+/* Resume headshot image */
+.headshot {
+    width: 200px;
+    height: 200px;
+    border-radius: 3px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ? */
+#customize-list {
+    float: left;
+    margin-left: 20px;
+    list-style: none;
+}
+
+/* ? */
+#gr_updates_widget {
+    float: left;
+    border-radius: 5px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 4px 1px #e0e0e0, inset 0 0 0 1px #e0e0e0;
+    -moz-box-shadow: 0 0 4px 1px #e0e0e0, inset 0 0 0 1px #e0e0e0;
+    box-shadow: 0 0 4px 1px #e0e0e0, inset 0 0 0 1px #e0e0e0;
+    padding: 15px 0 0 15px;
+    width: 400px;
+    height: 465px;
+}
+
+/* Print mode */
+@media print {
+    header nav {
+        display: none;
+    }
 }
