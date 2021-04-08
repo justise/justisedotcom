@@ -32,9 +32,13 @@ b {
 .headshot {
     width: 200px;
     height: 200px;
-    border-radius: 3px;
+    border-radius: 5px;
     margin: 0 auto;
     text-align: center;
+}
+
+.resume li {
+    padding-bottom: 7px;
 }
 
 /* ? */
