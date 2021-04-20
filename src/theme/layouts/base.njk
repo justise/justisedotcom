@@ -56,6 +56,7 @@ bannersubtitle: 'My little corner of the world'
           background-color: #000;
           background-image: url('{{ bannerbackground }}');
           height: {{bannerheight | default(0)}};
+          {{ "display:none" if hidebanner}}
         "
       >
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.2);">
