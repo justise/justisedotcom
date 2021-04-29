@@ -6,7 +6,6 @@ a {
     color: #0d47a1;
 }
 h1 {
-    color: rgb(34, 25, 80);
     font-weight: normal;
 }
 
@@ -18,13 +17,11 @@ h3 {
 h4 {
     font-weight: 500;
     font-size: 2em;
-    color: rgb(34, 25, 80);
 }
 
 h5 {
     font-size: 1.5em;
     font-weight: normal;
-    color: rgb(34, 25, 80);
 }
 
 b {
@@ -54,7 +51,13 @@ b {
     padding-bottom: 7px;
 }
 
+.resume h4,
+.resume h5,
 .resume h4 a {
+    color: rgb(34, 25, 80);
+}
+
+.resume h1 {
     color: rgb(34, 25, 80);
 }
 
