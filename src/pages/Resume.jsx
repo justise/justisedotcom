@@ -170,7 +170,7 @@ export default function Resume() {
                         </div>
                     </div>
                     <h6>
-                        Staff Frontend Engineer -&lt; Engineering Manager,
+                        Staff Frontend Engineer -&gt; Engineering Manager,
                         Reviews
                     </h6>
                     <p>
